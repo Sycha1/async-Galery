@@ -3,8 +3,7 @@
 
 Main.js
 
--After scrolling to the end of the page
- Page
+-After scrolling to the end of the page.
   -asks for 9 objects.
   -Get 9 urls.
   -Create 9 images with the source from taken urls.

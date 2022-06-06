@@ -37,7 +37,7 @@ const scrollEvent = (params) => {
 	}
 };
 
-//nasluchiwanie
+//listener
 renderImages();
 
 window.addEventListener("scroll", scrollEvent);

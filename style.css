@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
+
+:root {
+	--headerColor: rgb(75, 75, 75);
+	--backGround: rgb(56, 56, 56);
+	--textColor: white;
+	--themeText: rgb(23, 10, 104);
+}
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+	background-color: var(--backGround);
+	font-family: "Raleway", sans-serif;
+}
+
+header ul {
+	width: 100%;
+	margin-top: 0;
+	justify-content: center;
+	display: flex;
+	list-style: none;
+	background-color: var(--headerColor);
+}
+
+header ul li {
+	width: 15vw;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-right: 1px solid black;
+}
+
+li a {
+	text-align: center;
+	text-decoration: none;
+	color: var(--textColor);
+}
+
+.lastHederElement {
+	border-right: none;
+}
+
+.theme {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	float: right;
+}
+
+.theme p {
+	margin: 0;
+	color: var(--themeText);
+	font-size: 20px;
+}
+
+input[type="checkbox"] {
+	position: relative;
+	margin: 0 10px;
+	width: 40px;
+	height: 20px;
+	-webkit-appearance: none;
+	background-color: rgb(161, 161, 161);
+	border-radius: 20px;
+}
+
+input[type="checkbox"]:before {
+	content: " ";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: rgb(85, 85, 85);
+	transition: 0.5s transform;
+}
+
+input[type="checkbox"]:checked {
+	background-color: rgb(0, 149, 235);
+}
+
+input:checked[type="checkbox"]:before {
+	background-color: rgb(199, 199, 199);
+	transform: translate(20px);
+}
+
+section {
+	min-height: 101vh;
+}
+
+.imgCnt {
+	width: 50vw;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	gap: 50px;
+}
